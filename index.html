@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>To Do</title>
+			<link rel="stylesheet" href="css/normalize.css">
+    	<link rel="stylesheet" href="css/main.css">
+			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+      <link rel="shortcut icon" href="/favicon.ico">
+
+  </head>
+  <body onload="show()">
+
+		<header>
+			<img src="img/todo.png">
+		</header>
+		
+		<div id="wrapper">
+		
+			<div id="add">
+				<textarea id="addTask" placeholder="What to do?" rows="2"></textarea>
+				<a onclick="add()">Add Task</a>
+			</div>
+			
+		</div>
+    
+    <header id="doneHeader" class="hidden">
+      <img src="img/done.png">
+    </header>
+    
+    <div id="doneWrapper">
+    
+      
+    
+    </div>
+    
+
+	<script src="js/todo.js"></script>
+  </body>
+</html>

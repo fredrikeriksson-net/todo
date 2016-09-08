@@ -1,0 +1,169 @@
+/*
+* To Do List Version 2 Index
+___________________________________
+
+CH1 Tyopgraphy
+CH2 Page Structure
+CH3 Header & Navigation
+
+___________________________________
+*/
+
+
+/* CH1 Typography 
+__________________________*/
+
+p {
+	color: #6f6f6f;
+	font: 16px 'Open Sans', sans-serif;
+	padding: 10%;
+	margin: 0;
+}
+
+a {
+	color: #6f6f6f;
+	cursor: pointer;
+  display: inline-block;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+	padding-left: 10%;
+	margin-bottom: 5%;
+}
+
+a:hover {
+	color: #000;
+}
+
+.done, .edit, .del, .save {
+  font-weight: 800;
+  padding-left: 10%;
+  cursor: pointer;
+}
+
+.done {
+	color: #26A65B;
+}
+
+.done:hover{
+  color: #2ECC71;
+}
+
+.doneStriked {
+  color: #CCC;
+  text-decoration: line-through;
+}
+
+.edit {
+	color: #446CB3;
+}
+
+.edit:hover {
+  color: #4183D7;
+}
+
+.del {
+	color: #CF000F;
+}
+
+.del:hover {
+  color: #F22613;
+}
+
+.save {
+	color: #D35400;
+}
+
+.save:hover {
+  color: #E87E04;
+}
+
+
+/* CH2 Page Structure 
+__________________________*/
+
+body {
+	background-color: #fafafa;
+}
+
+#wrapper, #doneWrapper {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+textarea {
+	border: none;
+	border-bottom: 1px dotted #E8E8E8;
+	color: #6f6f6f;
+	font-family: 'Open Sans', sans-serif;
+	margin: 5%;
+	padding: 15px;
+	resize: none;
+	width: 235px
+}
+
+textarea:focus {
+	border-bottom: 1px dotted #666;
+	outline: none;
+}
+
+
+/* Containers */
+#add, div[id*="taskContainer"], div[id*="doneTaskContainer"], div[id*="editContainer"] {
+	background-color: #FFF;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+	width: 300px;
+}
+
+.hidden{
+  display: none;
+}
+
+.visible{
+  display: block;
+}
+
+
+/* CH3 Header & Navigation 
+__________________________*/
+
+header {
+  margin-left: 8%;
+	max-width: 960px;
+}
+
+header img {
+	padding-left: 10px;
+  margin-top: 5%;
+}
+
+
+/* DESKTOP RULES */
+
+@media screen and (min-width: 485px) {
+	
+  /* CH2 Page Structure 
+  __________________________*/
+  
+  #wrapper, #doneWrapper {
+   flex-direction: row;
+	}
+  
+  header {
+   margin: 0 auto;
+  }
+  
+  #add, div[id*="taskContainer"], div[id*="doneTaskContainer"], div[id*="editContainer"] {
+	 margin: 7px;
+   width: 300px;
+  }
+
+}
+
